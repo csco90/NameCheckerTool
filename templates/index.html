@@ -1,0 +1,51 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+    <div class="">
+
+
+        <div class="p-5 mb-4 bg-light rounded-3">
+            <div class="container-fluid py-5">
+                <h1 class="display-5 fw-bold">NameFinder </h1>
+                <p class="col-md-8 fs-4">Learning Series </p>
+
+                <hr/>
+                <p>
+
+                </p>
+
+            </div>
+        </div>
+
+        <div class="row align-items-md-stretch">
+
+            <div class="col-md-6">
+                <div class="h-100 p-5 text-white bg-primary rounded-3">
+                    <h2>NameFinder</h2>
+                    <p>Import a template containing all the names you want to crosscheck and get an Excel file with the
+                        results </p>
+
+                    <a href="{{ url_for('findnames') }}" class="btn btn-outline-light" type="button">Start!</a>
+
+                </div>
+            </div>
+
+
+            <div class="col-md-6 ">
+                <div class="h-100 border rounded">
+                    <div class="p-1">
+
+                            <img class="img-fluid p-5" src="/static/img/namecloud_2013.png"/>
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+{% endblock %}
